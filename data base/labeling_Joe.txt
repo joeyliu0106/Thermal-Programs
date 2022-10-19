@@ -1,0 +1,31 @@
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+import numpy as np
+import time
+
+data = np.empty((0, 0), float)
+
+for line in open("ThermalData_Joe.txt"):
+    if len(line) > 300:
+        data = np.append(data, np.fromstring(line, dtype=float, sep=' '))
+    elif len(line) == 100:
+        break
+
+data = data.reshape(-1, 24, 32)
+
+fig, ax = plt.subplots()
+
+# for i in range (0, 677):
+#     data = np.rot90(data, k = -1, axes=(1, 2))
+#     ax.imshow(data[i])
+#     rect = patches.Rectangle((10, 3), 6, 6, lw=1, ec='r', fc='none')
+#     ax.add_patch(rect)
+#     plt.show()
+#     time.sleep(1)
+
+
+data = np.rot90(data, k = -1, axes=(1, 2))
+ax.imshow(data[75])
+rect = patches.Rectangle((10, 3), 6, 6, lw=1, ec='r', fc='none')
+ax.add_patch(rect)
+plt.show()
