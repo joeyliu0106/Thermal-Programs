@@ -2,7 +2,10 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
 import time
+import os
 
+
+os.chdir('C:/Users/Joe/Desktop/thermal_cnn/program/data base')
 
 ########################################################################################################################
 #array setting
@@ -249,6 +252,10 @@ data_Han_aug = np.append(data_Han_aug, data_0922_2, axis=0)
 label_Han_aug = np.append(label_Han, label_0922_1, axis=0)
 label_Han_aug = np.append(label_Han_aug, label_0922_2, axis=0)
 # label_Han_aug = np.append(label_Han_aug, label_Han_ud, axis=0)
+
+os.chdir('C:/Users/Joe/Desktop/thermal_cnn')
+
+
 
 np.save('data_Joe', data_Joe)
 np.save('data_Han', data_Han)
