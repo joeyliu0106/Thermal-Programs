@@ -201,22 +201,6 @@ data_Joe_ud = np.flip(data_Joe, axis=1)
 
 data_Han_lr = np.flip(data_Han, axis=2)
 data_Han_ud = np.flip(data_Han, axis=1)
-
-# data_0921_1_lr = np.flip(data_0921_1, axis=2)
-# data_0922_1_lr = np.flip(data_0922_1, axis=2)
-# data_0922_2_lr = np.flip(data_0922_2, axis=2)
-
-# data_0921_1_ud = np.flip(data_0921_1, axis=1)
-# data_0922_1_ud = np.flip(data_0922_1, axis=1)
-# data_0922_2_ud = np.flip(data_0922_2, axis=1)
-# print('1. ', data_Joe.shape)
-# print('2. ', data_Joe_lr.shape)
-# print('3. ', data_Joe_ud.shape)
-#
-# print('4. ', data_Han.shape)
-# print('5. ', data_Han_lr.shape)
-# print('6. ', data_Han_ud.shape)
-
 ########################################################################################################################
 #augmentation appending
 ########################################################################################################################
