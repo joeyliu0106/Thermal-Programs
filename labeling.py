@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
+import os
 import time
 
-data = np.load('data_1013.npy')
+os.chdir('C:/Users/Joe/Desktop/thermal_cnn/data in ndarray')
+
+data = np.load('data_1003_1.npy')
 
 ########################################################################################################################
 #labeling with showing pics
@@ -11,9 +14,9 @@ data = np.load('data_1013.npy')
 
 fig, ax = plt.subplots()
 
-ax.imshow(data[300], vmin=22, vmax=29, cmap='jet')  # haven't done yet
-# rect1 = patches.Rectangle((10, 4), 5, 5, lw=1, ec='r', fc='none')
-# ax.add_patch(rect1)
+ax.imshow(data[140], vmin=22, vmax=32.5, cmap='jet')  # haven't done yet
+rect1 = patches.Rectangle((11, 6), 6, 7, lw=1, ec='r', fc='none')
+ax.add_patch(rect1)
 # rect2 = patches.Rectangle((11, 7), 5, 5, lw=1, ec='y', fc='none')
 # ax.add_patch(rect2)
 #

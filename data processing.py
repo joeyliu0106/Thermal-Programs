@@ -5,7 +5,7 @@ import time
 import os
 
 
-os.chdir('C:/Users/Joe/Desktop/thermal_cnn/program/data base')
+os.chdir('C:/Users/Joe/Desktop/thermal_cnn/data base')
 
 ########################################################################################################################
 #array setting
@@ -267,3 +267,10 @@ print('training data set size: ', data_Joe_aug.shape)
 print('training label set size: ', label_Joe_aug.shape)
 print('testing data set size: ', data_Han_aug.shape)
 print('testing label set size: ', label_Han_aug.shape)
+
+
+
+os.chdir('C:/Users/Joe/Desktop/thermal_cnn/data base')
+
+np.savetxt('label_Joe_aug.txt', label_Joe_aug, fmt='%i', delimiter='\t')
+np.savetxt('label_Han_aug.txt', label_Han_aug, fmt='%i', delimiter='\t')
